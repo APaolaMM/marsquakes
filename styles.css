@@ -1,0 +1,191 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #CCCCCC; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Encabezado */
+header {
+    background-color: #890D0D; 
+    color: white;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem; 
+    font-weight: 600;
+    margin: 0;
+}
+
+.navigation_bar_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation_bar_li {
+    margin: 0 1.5rem;
+}
+
+.navigation_bar_a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation_bar_a:hover {
+    background-color: white; 
+    color: #890D0D; 
+    border-radius: 5px; 
+}
+
+/* Contenedor del blog */
+.blog-container {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.project_img {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.img_code {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.project_img:hover .img_code {
+    transform: scale(1.05);
+}
+
+
+.blog-content p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; 
+    }
+
+    .navigation_bar_ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .navigation_bar_li {
+        margin: 10px 0;
+    }
+
+    .project_img {
+        height: 40vh; 
+    }
+
+    .blog-content p {
+        font-size: 1rem;
+    }
+}
+.hidden {
+    display: none;
+}
+.team-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.team-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    max-width: 150px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+}
+
+.position {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #333;
+}

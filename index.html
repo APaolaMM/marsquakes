@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation_bar">
+            <ul class="navigation_bar_ul">
+                <li class="navigation_bar_li"><a class="navigation_bar_a" href="index.html">Home</a></li>
+                <li class="navigation_bar_li"><a class="navigation_bar_a" href="about-the-proyect.html">About the project</a></li>
+                <li class="navigation_bar_li"><a class="navigation_bar_a" href="about-the-team.html">About the team</a></li>
+            </ul>
+        </nav>
+        <h1>Marsquakes</h1>
+    </header>
+
+    <main>
+        <h2>Select a Marsquake</h2>
+
+
+        <div class="marsquakechk">
+            <input value="option1" class="form-check-input" type="radio" name="marsquakeOption" id="option1">
+            <label class="form-check-label" for="option1">Example #1</label>
+        </div>
+        <div class="marsquakechk">
+            <input value="option2" class="form-check-input" type="radio" name="marsquakeOption" id="option2">
+            <label class="form-check-label" for="option2">Example #2</label>
+        </div>
+
+        <section id="section1" class="hidden">
+            <img src="images/marsquake1_nofilter.png" alt="Imagen de la Opción 1" class="section-image">
+        </section>
+        <section id="section2" class="hidden">
+            <img src="images/marsquake2_nofilter.png" alt="Imagen de la Opción 2" class="section-image">
+        </section>
+
+
+        <h2 id="filterinfh" class="hidden">Select a filter</h2>
+        <div id="filterinf1" class="hidden">
+            <input value="filter1" class="form-check-input" type="radio" name="marsquakeFilter" id="filter1">
+            <label class="form-check-label" for="filter1">Filter #1</label>
+        </div>
+        <div id="filterinf2" class="hidden">
+            <input value="filter2" class="form-check-input" type="radio" name="marsquakeFilter" id="filter2">
+            <label class="form-check-label" for="filter2">Filter #2</label>
+        </div>
+
+
+        <section id="filterimg1" class="hidden">
+            <img src="images/marsquake1_filter1.png" alt="Imagen del filtro 1" class="section-image">
+        </section>
+        <section id="filterimg2" class="hidden">
+            <img src="images/marsquake1_filter2.png" alt="Imagen del filtro 2" class="section-image">
+        </section>
+        <section id="filterimg3" class="hidden">
+            <img src="images/marsquake2_filter1.png" alt="Imagen del filtro 3" class="section-image">
+        </section>
+        <section id="filterimg4" class="hidden">
+            <img src="images/marsquake2_filter2.png" alt="Imagen del filtro 4" class="section-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marsquakes.</p>
+    </footer>
+
+
+    <script src="functions.js"></script>
+</body>
+
+</html>
